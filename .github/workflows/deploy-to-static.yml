@@ -13,8 +13,8 @@ jobs:
       - name: Clone static.silly.enterprises
         run: |
           git clone https://github.com/silly-enterprises/static.silly.enterprises
+          cd static.silly.enterprises
           mkdir -p docs
-          cp install.sh static.silly.enterprises/docs/install.sh
           cp install.sh static.silly.enterprises/docs/install.sh
           cp install.ps1 static.silly.enterprises/docs/install.ps1
           cd static.silly.enterprises
