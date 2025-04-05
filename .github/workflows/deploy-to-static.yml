@@ -11,7 +11,7 @@ jobs:
       - id: create_token
         uses: tibdex/github-app-token@v2
         with:
-          app_id: ${{ secrets.SILLY_ENTERPRISES_BOT_APP_ID }}
+          app_id: ${{ vars.SILLY_ENTERPRISES_BOT_APP_ID }}
           private_key: ${{ secrets.SILLY_ENTERPRISES_BOT_2025_04_05_PRIVATE_KEY }}
 
       - uses: actions/checkout@v4
