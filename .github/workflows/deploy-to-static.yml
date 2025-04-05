@@ -19,13 +19,13 @@ jobs:
       - name: Clone static.silly.enterprises
         run: |
           git clone https://github.com/silly-enterprises/static.silly.enterprises
-          mkdir -p static.silly.enterprises/docs
+          mkdir -p static.silly.enterprises/scripts
           cp install.sh static.silly.enterprises/docs/install.sh
           cp install.ps1 static.silly.enterprises/docs/install.ps1
           cd static.silly.enterprises
           git config user.name "silly enterprises bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/install.sh
-          git add docs/install.ps1
+          git add scripts/install.sh
+          git add scripts/install.ps1
           git commit -m "Update from silly.install"
           git push https://x-access-token:${{ steps.create_token.outputs.token }}@github.com/silly-enterprises/static.silly.enterprises.git HEAD:main
