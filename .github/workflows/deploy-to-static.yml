@@ -1,4 +1,4 @@
-name: Deploy install.sh to silly.static
+name: Deploy scripts to silly.static
 
 on:
   push:
