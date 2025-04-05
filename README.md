@@ -122,7 +122,7 @@ server {
     
     location = / {
         proxy_pass https://static.silly.enterprises/apt/index.html;
-        proxy_set_header Host $host;
+        proxy_set_header Host static.silly.enterprises;
      }
 
       location / {
